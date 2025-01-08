@@ -59,7 +59,6 @@ def pregunta_01():
         create_dataframe()
         print("datos manipulados")
     work()
-
 pregunta_01()
     
     # """
