@@ -45,7 +45,7 @@ def pregunta_01():
                             datos.append({'phrase': frase, 'target': sentimiento})
         return datos
         
-    def action():
+    def create_dataframe():
         train_data = directory(os.path.join(ruta_datos, 'train'))
         test_data = directory(os.path.join(ruta_datos, 'test'))
 
@@ -56,7 +56,7 @@ def pregunta_01():
     def work():
         extractor()
         create_output()
-        action()
+        create_dataframe()
         print("datos manipulados")
     work()
 
